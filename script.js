@@ -8,7 +8,7 @@ $(document).ready(() => {
         $('.skills-box').append(
         `
             <div class="row">
-                <div class="skill-name ml-5 col-lg-4 mt-4 col-md-6 col-7">
+                <div class="skill-name ml-5 col-lg-4 mt-4 col-md-6 col-12">
                     ${languages[index]} 
                 </div>
                 <div class="skill-level col-lg-1 col-md-2 col-3">
