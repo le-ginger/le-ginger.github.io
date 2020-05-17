@@ -1,0 +1,593 @@
+
+/* ============================ screen sizes ============================ */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    .h1-class {
+        font-size: 80px;
+    }
+    .h3-class {
+        margin-top: 1em;
+        font-size: 70px;
+    }
+    p, li {
+        font-size: 50px;
+    }
+
+    .skills-box {
+        /* background: linear-gradient(rgb(43, 43, 43), rgb(102, 102, 102));*/
+    
+        background: rgb(57,57,57);
+        background: linear-gradient(315deg, rgba(57,57,57,1) 0%, rgba(0,0,0,1) 100%, rgba(0,212,255,1) 100%);
+        color: white;
+        font-size: 20px;
+        padding: 2em;
+        border-radius: 2vh;
+        max-height: 50%;
+        float: right;
+        margin-top: 3vh;
+        width: 100%;
+        /* position: absolute; */
+        overflow-y: scroll;
+    }
+    
+    .divider {
+        background-color: rgba(192, 192, 192, 0.199);
+        height: 0.5vh;
+        width: 100%;
+        border-radius: 1em;
+    }
+    
+    .count {
+        font-size: 30px;
+        margin-bottom: 2vh;
+    }
+    
+    .skill-name .skill-level {
+        padding: 1em;
+    }
+    
+    .skill-name {
+        margin-top: 2%;
+        /* background-color: red; */
+    }
+    
+    .skill-level {
+        /* background-color: blue; */
+        color: rgb(121, 121, 255);
+        text-align: center;
+        vertical-align: middle;
+    }
+
+
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .h1-class {
+        font-size: 40px;
+    }
+    .h3-class {
+        margin-top: 1em;
+        font-size: 30px;
+    }
+    p, li {
+        font-size: 20px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    /* .h1-class {
+        font-size: 40px;
+    }
+    .h3-class {
+        margin-top: 1em;
+        font-size: 30px;
+    }
+    p, li {
+        font-size: 20px;
+    } */
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+    .h1-class {
+        font-size: 40px;
+    }
+    .h3-class {
+        margin-top: 1em;
+        font-size: 30px;
+    }
+    p, li {
+        font-size: 20px;
+    }
+
+    .skills-box {
+        /* background: linear-gradient(rgb(43, 43, 43), rgb(102, 102, 102));*/
+    
+        background: rgb(57,57,57);
+        background: linear-gradient(315deg, rgba(57,57,57,1) 0%, rgba(0,0,0,1) 100%, rgba(0,212,255,1) 100%);
+        color: white;
+        font-size: 20px;
+        padding: 2em;
+        border-radius: 2vh;
+        width: 30%;
+        max-height: 50%;
+        float: right;
+        position: absolute;
+        overflow-y: scroll;
+    }
+    
+    .divider {
+        background-color: rgba(192, 192, 192, 0.199);
+        height: 0.5vh;
+        width: 100%;
+        border-radius: 1em;
+    }
+    
+    .count {
+        font-size: 30px;
+        margin-bottom: 2vh;
+    }
+    
+    .skill-name .skill-level {
+        padding: 1em;
+    }
+    
+    .skill-name {
+        margin-top: 2%;
+        /* background-color: red; */
+    }
+    
+    .skill-level {
+        /* background-color: blue; */
+        color: rgb(121, 121, 255);
+        text-align: center;
+        vertical-align: middle;
+    }
+    /* body {
+        font-size: 20px;
+    } */
+}
+
+/* =================================================================== */
+
+
+.page-content {
+    margin-top: 10rem;
+}
+
+.nav {
+    top: 0;
+    width: 100%;
+    height: 7rem;
+    position: fixed;
+    line-height: 65px;
+    text-align: center;
+    background: rgb(0, 0, 0);
+}
+
+div.logo {
+    float: left;
+    overflow: hidden;
+    width: 10em;
+    height: 10em;
+    position: fixed;
+    z-index: -1;
+    padding-left: 3rem;
+    padding-top: 1em;
+}
+
+img {
+    width:100%;
+    height:100%;
+}
+
+.nav div.logo a {
+    float: right;
+    text-decoration: none;
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    /* float: right; */
+    font-size: 2.4rem;
+    /* margin-left: 2rem; */
+}
+
+.nav a:hover {
+    text-decoration: none;
+    color: rgb(161, 161, 161);
+}
+
+.nav .main_list ul {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+}
+
+.nav .main_list ul li {
+    margin-left: 25%;
+    width: auto;
+    /* height: 65px; */
+    padding: 0;
+    /* padding-right: 3em; */
+}
+
+/* .nav div.main_list {
+    height: 65px;
+    float: right;
+}
+
+.nav div.main_list ul {
+    float: right;
+    width: 100%;
+    height: 65px;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav div.main_list ul li {
+    float: right;
+    width: auto;
+    height: 65px;
+    padding: 0;
+    padding-right: 3rem;
+}
+
+.nav div.main_list ul li a {
+    float: right;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    line-height: 65px;
+    font-size: 2.4rem;
+}
+
+.nav div.main_list ul li a:hover {
+    color: #00E676;
+} */
+
+
+
+
+
+
+
+
+
+
+
+/* ============================ Scrollbar ============================ */
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+  
+  /* Track */
+    ::-webkit-scrollbar-track {
+        background: rgba(57,57,57,0);
+    }
+  
+  /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 2em;
+    }
+  
+  /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* @import url('https://fonts.googleapis.com/css?family=Roboto');
+
+    
+    body {
+        margin: 10%;
+        color: white;
+        background: #111111;
+        font-family: 'Roboto', sans-serif;
+    } */
+    
+    
+    /* #nav-colors, #font-colors, #edges {
+        margin-top: 10px;
+        button {
+            display: inline-block;
+            padding: 10px;
+            margin: 0 5px;
+            border: 2px solid #111111;
+            transition: 0.2s ease;
+            &:hover {
+                border: 2px solid white;
+            }
+        }
+    } */
+
+
+    
+    /* .navbar {
+        border: 0;
+        border-radius: 0;
+        background: linear-gradient(to right, #ff5858, #f857a6);
+        .nav li > a, .navbar-brand {
+            max-height: 50px;
+            width: auto;
+            background: transparent !important;
+            font-size: 18px;
+            transition: 0.2s ease-in-out;
+            &:hover{
+                background-color: rgba(255,255,255,0.2);
+                font-size: 14px;
+                .link {
+                    width: 100%;
+                    padding: 0 5px 0 5px;
+                    visibility: visible;
+                    font-size: 14px;
+                }
+            }
+        }
+        .link {
+            width: 0;
+            font-family: 'Roboto', sans-serif;
+            transition: 0.2s ease-in-out;
+            visibility: hidden;
+            font-size: 0px;
+        }
+        span {
+            color: white;
+        }
+        .navbar-toggle {
+            padding-right: 0;
+            .icon-bar {
+                background: white;
+            }
+        }
+        .navbar-collapse {
+            display: none;
+        }
+        button {
+            background: transparent;
+        }
+        button[type=submit] {
+            padding-right: 0;
+            span {
+                transition: 0.3s ease-in-out;
+            }
+            &:hover {
+                span {
+                    transform: scale(1.3) rotate(90deg);
+                }
+            }
+        }
+        form {
+            padding: 0;
+            .form-control {
+                border: 0;
+                border-radius: 0;
+                color: black;
+                font-weight: bold;
+                background: rgba(255,255,255,0.7);
+                transition: 0.2s ease-in-out;
+                &:hover {
+                    background: white;
+                }
+            }
+        }
+        
+        .dropdown {
+            .fa-caret-down {
+                padding-left: 3px;
+                font-size: 18px;
+                transition: 0.4s ease;
+            }
+            &.open {
+                background-color: rgba(255, 255, 255, 0.2);
+                font-size: 14px;
+                .link {
+                    width: 100%;
+                    visibility: visible;
+                    font-size: 14px;
+                    padding: 0 5px 0 5px;
+                }
+                .dropdown-toggle {
+                    font-size: 14px;
+                }
+                .fa-caret-down {
+                    transform: rotate(180deg);
+                }
+            }
+            .dropdown-menu {
+                min-width: 0px !important;
+                width: 100%;
+                background: #ff5858;
+                text-align: center;
+                border-radius: 0;
+                li, a {
+                    color: white;
+                    font-size: 14px;
+                    line-height: 30px;
+                    &:hover {
+                        color: white;
+                        letter-spacing: 1px;
+                        background: transparent;
+                    }
+                }
+                a {
+                    padding: 0 15px 0 15px;
+                }
+            }	
+        }
+    } */
+    
+    /*
+    @media(max-width: 769px) {
+        .navbar {
+            .link {
+                padding-left: 10px;
+                visibility: visible;
+                width: 100%;
+                font-size: 14px;
+            }
+            .navbar-brand {
+                .link {
+                    visibility: hidden;
+                }
+            }
+        }
+        .dropdown {
+            .dropdown-menu {
+                text-align: left !important;
+            }
+        }
+        button[type=submit] {
+            width: 50%;
+            float: left;
+        }
+        .navbar-form {
+            border: 0;
+        }
+        .form-group {
+            padding: 0;
+            margin: 0;
+            input {
+                width: 50%;
+                float: left
+            }
+        }
+    } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
