@@ -1,3 +1,117 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    :root {
+        --border-colour: red;
+        --responsive-height-small: 20vh;
+        --responsive-width-small: 80%;
+        --skill-box-width: 80%;
+        --social-outer-width: 100%;
+        --logo-width: 59vh;
+        --logo-height: 33vh;
+        --id-width: 100%;
+        --id-height: 80vh;
+        --id-top: 40vh;
+        --id-position: none;
+        --id-margin-top: 0;
+        --social-top: 32vh;
+        --social-padding-left: 1.7vh;
+        --header-height: 80vh;
+        --header-width: 100%;
+    }
+
+    .personal-summary, .hobbies-div {
+        margin-top: 5vh;
+        max-width: 80%;
+    }
+
+    /* social icons */
+
+    .social ul {
+        list-style: none;
+        margin: auto;
+        width: 80%;
+    }
+    
+    .social ul li {
+        display: inline;
+    }
+
+    /* logo banner */
+    .logo {
+        vertical-align: middle;
+        position: relative;
+    }
+    
+    .header-back {
+        position: absolute;
+        top: 0; bottom: 0; left: 0; right: 0;
+    } 
+
+    .not-left {
+        margin-left: 7.5vh;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    :root {
+        --border-colour: blue;
+        --responsive-width-small: 5vh;
+        --small-context-width: 100%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    :root {
+        --border-colour:green;
+        --responsive-width-small: 25vh;
+        --small-context-width: 100%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    :root {
+        --border-colour:pink;
+        --responsive-width-small: 10vh;
+        --small-context-width: 100%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    :root {
+        --border-colour:yellow;
+        --responsive-width-small: 40%;
+        --responsive-height-small: 25vh;
+        --small-context-width: 100%;
+        --id-width: 50%;
+        --id-height: 40vh;
+        --id-top: 0;
+        --id-position: absolute;
+        --id-margin-top: 4.75vh;
+        --social-top: 0vh;
+        --social-padding-left: 0;
+        --social-outer-width: 50%;
+        --logo-width: 70vh;
+        --logo-height: 40vh;
+        --header-width: 25vh;
+        --header-height: 30vh;
+    }
+
+    .social {
+        text-align: center;
+        right: 0;
+    }
+
+    .personal-summary, .hobbies-div {
+        margin-top: 10vh;
+    }
+}
+
+
+
 /* ============================ Scrollbar ============================ */
     ::-webkit-scrollbar {
         width: 10px;
@@ -31,35 +145,31 @@ body {
 }
 
 .header-back {
-    width: 70vh;
-    height: 40vh;
+    width: var(--logo-width);
+    height: var(--logo-height);
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
 }
 
 .me-div {
-    width: 50%;
+    width: var(--id-width);
+    height: var(--id-height);
     text-align: center;
-    height: 40vh;
-    position: absolute;
-    top: 0;
+    position: var(--id-position);
+    top: var(--id-top);
 }
 
 .header-me {
-    margin-top: 4.75vh;
-    width: 25vh;
-    height: 30vh;
+    width: var(--header-width);
+    height: var(--header-height);
+    margin-top: var(--id-margin-top);
     border-radius: 100%;
 }
 
 .social {
-    /* border: 1px solid red; */
-    width: 50%;
-    text-align: center;
+    width: var(--social-outer-width);
     position: absolute;
-    right: 0;
-    top: 0;
+    top: var(--social-top);
 }
 
 .social-icon {
@@ -68,6 +178,7 @@ body {
     width: 8vh;
     border-radius: 100%;
     padding-top: 2.3vh;
+    padding-left: var(--social-padding-left);
 }
 
 .social-icon:hover {
@@ -82,18 +193,16 @@ body {
     margin-top: 4vh;
 }
 
-.page-content {
-    margin-top: 10vh;
-}
-
+/*////////////////////////////////////////////////////////////////////*/
 .personal-summary, .hobbies-div {
     display: inline-block;
-    width: 40%;
-    height: 25vh;
+    width: var(--responsive-width-small);
+    height: var(--responsive-height-small);
     margin-left: 5vh;
 }
 
 .h1-class, .h3-class {
+    color: var(--border-colour);
     font-size: 30px;
     font-weight: 600;
     margin-left: auto;
@@ -111,8 +220,8 @@ body {
 
 .skills-div {
     margin: auto;
-    margin-top: 7vh;
-    width: 60%;
+    margin-top: 5vh;
+    width: var(--skill-box-width);
 }
 
 .bar {
