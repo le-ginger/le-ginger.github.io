@@ -68,27 +68,35 @@
     :root {
         --border-colour: green;
         --responsive-height-small: 20%;
-        --responsive-width-small: 140%;
-        --skill-box-width: 140%;
+        --responsive-width-small: 170%;
+        --skill-box-width: 170%;
         --skill-box-height: 50%;
         --social-outer-width: 100%;
-        --logo-width: 59vh;
+        --logo-width: 150%;
         --logo-height: 33vh;
         --id-width: 100%;
-        --id-height: 80vh;
+        --id-height: 100%;
         --id-top: 40vh;
-        --id-position: none;
+        --id-position: absolute
         --id-margin-top: 0;
-        --social-top: 32vh;
+        --social-top: 126vh;
         --social-padding-left: 1.4em;
-        --header-height: 80vh;
-        --header-width: 127.5%;
+        --header-height: 100%;
+        --header-width: 150%;
         --summary-margin-left: 0;
     }
 
-    .header-me {
-        margin: auto;
+    .me-div {
+        margin-top: 5vh;
     }
+
+    .page-content {
+        margin-top: 12vh;
+    }
+
+    /* .header-me {
+        margin: auto;
+    } */
 
     .personal-summary, .hobbies-div {
         margin-top: 5vh;
@@ -110,7 +118,7 @@
     
     .social ul li {
         display: inline;
-        margin-left: 11.5%;
+        margin-left: 16%;
     }
 
     /* logo banner */
@@ -223,7 +231,7 @@ body {
 }
 
 .header-back {
-    width: var(--logo-width);
+    /* width: var(--logo-width); */
     height: var(--logo-height);
     display: block;
     margin: auto;
@@ -241,7 +249,11 @@ body {
 .header-me {
     width: var(--header-width);
     height: var(--header-height);
-    margin-top: var(--id-margin-top);
+    /*margin-top: var(--id-margin-top); */
+
+    /* width: 150%;
+    height: 100%; */
+    /* margin-top: 100%; */
     margin: auto;
     border-radius: 100%;
 }
