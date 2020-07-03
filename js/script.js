@@ -7,6 +7,19 @@ let skill_flag = false;
 $(document).ready(() => {
     console.log('loaded');
 
+
+
+
+    
+
+      
+
+
+
+
+
+
+
     $('#reddit').on('click', () => {
         console.log('reddit clicked');
         reddit_redirect()

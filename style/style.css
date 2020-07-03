@@ -66,6 +66,8 @@
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     :root {
+        --map-width: 120vw;
+        --map-height: 120vw; 
         --border-colour: green;
         --responsive-height-small: 20%;
         --responsive-width-small: 170%;
@@ -79,7 +81,7 @@
         --id-top: 40vh;
         --id-position: absolute
         --id-margin-top: 0;
-        --social-top: 126vh;
+        --social-top: 133vh;
         --social-padding-left: 1.4em;
         --header-height: 100%;
         --header-width: 150%;
@@ -94,13 +96,13 @@
         margin-top: 12vh;
     }
 
-    /* .header-me {
-        margin: auto;
-    } */
-
-    .personal-summary, .hobbies-div {
+    .personal-summary {
         margin-top: 5vh;
-        font-size: 3em;
+        font-size: 5em;
+    }
+
+    .hobbies-div {
+        font-size: 5em;
     }
 
     .h1-class, .h3-class {
@@ -137,22 +139,17 @@
     }
 
     .skills-div {
-        font-size: 3em;
+        font-size: 5em;
     }
 
     .skills-div .skill-bar {
         border-radius: 3em;
-        margin-bottom: 1em;
+        margin-bottom: 2em;
     }
 
     .skills-div .skill-name {
         left: 0;    
     }
-
-    /* .fa {
-        font-size: 20px;
-        font-size: 2vw;
-    } */
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -361,4 +358,26 @@ body {
 
 .inverted-dark-text {
     color: rgb(33, 33, 41);
+}
+
+.divider {
+    border: 2px solid grey;
+    width: 170%;
+    margin-top: 10em;
+    margin-bottom: 10em;
+    position: relative;
+    left: 0;
+}
+
+.icon-divider {
+    width: 170%;
+    margin: auto;
+    text-align: center;
+    font-size: 3em;
+}
+
+iframe {
+    margin-top: 10vw;
+    width: var(--map-width);
+    height: var(--map-height);
 }
