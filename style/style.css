@@ -17,16 +17,18 @@
         --social-padding-left: 1.7vh;
         --header-height: 80vh;
         --header-width: 100%;
+        --summary-margin-left: 5vh;
     }
 
     .personal-summary, .hobbies-div {
         margin-top: 5vh;
-        max-width: 80%;
+        max-width: 100%;
     }
 
     /* social icons */
 
     .social ul {
+        border: 5px solid red;
         list-style: none;
         margin: auto;
         width: 80%;
@@ -64,10 +66,85 @@
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     :root {
-        --border-colour:green;
-        --responsive-width-small: 25vh;
-        --small-context-width: 100%;
+        --border-colour: green;
+        --responsive-height-small: 20%;
+        --responsive-width-small: 140%;
+        --skill-box-width: 140%;
+        --skill-box-height: 50%;
+        --social-outer-width: 100%;
+        --logo-width: 59vh;
+        --logo-height: 33vh;
+        --id-width: 100%;
+        --id-height: 80vh;
+        --id-top: 40vh;
+        --id-position: none;
+        --id-margin-top: 0;
+        --social-top: 32vh;
+        --social-padding-left: 1.4em;
+        --header-height: 80vh;
+        --header-width: 127.5%;
+        --summary-margin-left: 0;
     }
+
+    .header-me {
+        margin: auto;
+    }
+
+    .personal-summary, .hobbies-div {
+        margin-top: 5vh;
+        font-size: 3em;
+    }
+
+    .h1-class, .h3-class {
+        font-size: 1.5em;
+    }
+
+    /* social icons */
+
+    .social ul {
+        /* border: 5px solid red; */
+        list-style: none;
+        margin: auto;
+        width: 126%;
+    }
+    
+    .social ul li {
+        display: inline;
+        margin-left: 11.5%;
+    }
+
+    /* logo banner */
+    .logo {
+        vertical-align: middle;
+        position: relative;
+    }
+    
+    .header-back {
+        position: absolute;
+        top: 0; bottom: 0; left: 0; right: 0;
+    } 
+
+    .not-left {
+        margin-left: 7.5vh;
+    }
+
+    .skills-div {
+        font-size: 3em;
+    }
+
+    .skills-div .skill-bar {
+        border-radius: 3em;
+        margin-bottom: 1em;
+    }
+
+    .skills-div .skill-name {
+        left: 0;    
+    }
+
+    /* .fa {
+        font-size: 20px;
+        font-size: 2vw;
+    } */
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -139,7 +216,8 @@ body {
 }
 
 .logo {
-    width: 100%;
+    /* width: 100%; */
+    width: var(--logo-width);
     background: rgb(33, 33, 41);
     height: 40vh;
 }
@@ -155,6 +233,7 @@ body {
     width: var(--id-width);
     height: var(--id-height);
     text-align: center;
+    margin: auto;
     position: var(--id-position);
     top: var(--id-top);
 }
@@ -163,6 +242,7 @@ body {
     width: var(--header-width);
     height: var(--header-height);
     margin-top: var(--id-margin-top);
+    margin: auto;
     border-radius: 100%;
 }
 
@@ -181,6 +261,11 @@ body {
     padding-left: var(--social-padding-left);
 }
 
+/* .fa {
+    width: 8vh;
+    height: 8vh;
+} */
+
 .social-icon:hover {
     cursor: pointer;
 }
@@ -198,12 +283,11 @@ body {
     display: inline-block;
     width: var(--responsive-width-small);
     height: var(--responsive-height-small);
-    margin-left: 5vh;
+    margin-left: var(--summary-margin-left);
 }
 
 .h1-class, .h3-class {
     color: var(--border-colour);
-    font-size: 30px;
     font-weight: 600;
     margin-left: auto;
     margin-right: auto;
@@ -222,6 +306,7 @@ body {
     margin: auto;
     margin-top: 5vh;
     width: var(--skill-box-width);
+    height: var(--skill-box-height);
 }
 
 .bar {

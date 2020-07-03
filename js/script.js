@@ -26,7 +26,7 @@ $(document).ready(() => {
         $('.skills-box').append(
         `
             <div class="row">
-                <div class="skill-name bar-description col-lg-4 mt-4 col-md-6 col-12">
+                <div class="skill-name bar-description col-12">
                     <span class="skill-text">${languages[index]}</span>
                 </div>
                 
