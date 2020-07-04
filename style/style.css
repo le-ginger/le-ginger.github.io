@@ -66,6 +66,7 @@
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     :root {
+        --map-margin-top: 10vw;
         --map-width: 120vw;
         --map-height: 120vw; 
         --border-colour: black;
@@ -86,6 +87,7 @@
         --header-height: 100%;
         --header-width: 150%;
         --summary-margin-left: 0;
+        --divider-width: 170%;
     }
 
     .me-div {
@@ -164,31 +166,121 @@
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     :root {
+        --map-margin-top: 0vh;
+        --summary-margin-left: 0;
+        --map-width: 100%;
+        --map-height: 40vw; 
         --border-colour:yellow;
-        --responsive-width-small: 40%;
-        --responsive-height-small: 25vh;
-        --small-context-width: 100%;
+        --responsive-width-small: 100%;
+        --responsive-height-small: 50%;
+        --small-context-width: 50%;
         --id-width: 50%;
         --id-height: 40vh;
-        --id-top: 0;
+        --id-top: 5vh;
         --id-position: absolute;
         --id-margin-top: 4.75vh;
-        --social-top: 0vh;
+        --social-top: 0;
         --social-padding-left: 0;
         --social-outer-width: 50%;
-        --logo-width: 70vh;
+        --logo-width: 100%;
         --logo-height: 40vh;
         --header-width: 25vh;
         --header-height: 30vh;
+        --skill-box-width: 100%;
+        --skill-box-height: 50%;
+        --divider-width: 100%;
     }
 
     .social {
-        text-align: center;
+        /* border: 1px solid red; */
+        height: 40vh;
         right: 0;
     }
 
+    .social ul {
+        /* border: 5px solid red; */
+        width: 30%;
+        height: 40vh;
+        display: table;
+    }
+
+    .social ul li {
+        /* border: 2px solid blue; */
+        width: 8vw;
+        height: 8vw;
+        margin: 8vh auto;
+        display: table-row;
+        position: absolute;
+    }
+
+    .fa-reddit {
+        position: absolute;
+        top: 18vh;
+        right: 0.4vw;
+    }
+
+    .fa-github {
+        position: absolute;
+        top: -7vh;
+        right: 0.4vw;
+    }
+
+    .fa-linkedin {
+        position: absolute;
+        top: 5vh;
+        right: -5.4vw;
+    }
+
+    .social-icon {
+        text-align: center;
+        margin: 5px auto;
+        height: 8vw;
+        width: 8vw;
+    }
+
+    .hobbies-div {
+        margin-top: -8vh;
+    }
+
     .personal-summary, .hobbies-div {
-        margin-top: 10vh;
+        line-height: 2rem;   
+    }
+
+    .hobbies-div ul {
+        margin-top: 2rem;
+    }
+
+    .hobbies-div li {
+        margin-top: 1   rem;
+        list-style: circle;
+        font-size: 2rem;
+    }
+
+    .h1-class, .h3-class {
+        font-size: 3rem;
+        padding-bottom: 3em;
+    }
+
+    .content {
+        margin-top: 2em;
+        font-size: 2rem;
+    }
+
+    .skills-div {
+        font-size: 1.5rem;
+    }
+
+    .skills-div .skill-bar {
+        border-radius: 3em;
+        margin-bottom: 2em;
+    }
+
+    .skills-div .skill-name {
+        left: 0;    
+    }
+
+    .icon-divider {
+        display: none;
     }
 }
 
@@ -263,17 +355,10 @@ body {
 
 .social-icon {
     background-color: gray;
-    height: 8vh;
-    width: 8vh;
     border-radius: 100%;
-    padding-top: 2.3vh;
+    padding-top: 2.2vh;
     padding-left: var(--social-padding-left);
 }
-
-/* .fa {
-    width: 8vh;
-    height: 8vh;
-} */
 
 .social-icon:hover {
     cursor: pointer;
@@ -283,9 +368,7 @@ body {
     list-style: none;
 }
 
-.social-stack {
-    margin-top: 4vh;
-}
+
 
 /*////////////////////////////////////////////////////////////////////*/
 .personal-summary, .hobbies-div {
@@ -362,7 +445,7 @@ body {
 
 .divider {
     border: 2px solid grey;
-    width: 170%;
+    width: var(--divider-width);
     margin-top: 10em;
     margin-bottom: 10em;
     position: relative;
@@ -370,14 +453,14 @@ body {
 }
 
 .icon-divider {
-    width: 170%;
+    width: var(--divider-width);
     margin: auto;
     text-align: center;
     font-size: 3em;
 }
 
 iframe {
-    margin-top: 10vw;
+    margin-top: var(--map-margin-top);
     width: var(--map-width);
     height: var(--map-height);
 }
