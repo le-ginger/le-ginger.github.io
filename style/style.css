@@ -68,7 +68,7 @@
     :root {
         --map-width: 120vw;
         --map-height: 120vw; 
-        --border-colour: green;
+        --border-colour: black;
         --responsive-height-small: 20%;
         --responsive-width-small: 170%;
         --skill-box-width: 170%;
@@ -82,7 +82,7 @@
         --id-position: absolute
         --id-margin-top: 0;
         --social-top: 133%;
-        --social-padding-left: 1.4em;
+        --social-padding-left: 0.53em;
         --header-height: 100%;
         --header-width: 150%;
         --summary-margin-left: 0;
