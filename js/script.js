@@ -1,31 +1,12 @@
+console.log('connected');
+AOS.init({duration: 1200});
+
 const languages = [ 'Javascript', 'HTML & CSS', 'Java', 'C++', 'C#', 'PHP', 'ASP.NET', 'NodeJS' ];
 const langSkill = [ 86, 80, 67, 67, 80, 69, 85, 80 ];
 let skill_flag = false;
 
-
-
 $(document).ready(() => {
     console.log('loaded');
-
-    $('#to_top').click(() => {
-        document.body.scrollTop = 0; // For Safari
-        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-    });
-
-    $('#reddit').on('click', () => {
-        console.log('reddit clicked');
-        reddit_redirect()
-    });
-
-    $('#linkedin').on('click', () => {
-        console.log('linkedin clicked');
-        linkedin_click();
-    });
-
-    $('#github').on('click', () => {
-        console.log('github clicked');
-        github_click();
-    });
 
     for (let index = 0; index < languages.length; index++) {
         $('.skills-box').append(
@@ -37,7 +18,7 @@ $(document).ready(() => {
                 
                 <div class="skill-bar" style="width: ${langSkill[index]}%; height: 1vh;">
                     <div class="bar">
-                        <span class="bar-info">${langSkill[index]}</span>
+                        <span class="bar-info" style="width: ${langSkill[index]}%; height: 1vh;">${langSkill[index]}</span>
                     </div>
                 </div>
             </div>
