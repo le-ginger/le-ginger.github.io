@@ -154,6 +154,7 @@ body {
 
 .logo {
     position: absolute;
+    z-index: 99;
     width: 75%;
     top: 50%;
     left: 50%;
@@ -268,4 +269,44 @@ body {
 
 .fa-linkedin, .fa-reddit, .fa-github {
     font-size: 80pt;
+}
+
+@media screen and (max-device-width: 480px) and (orientation: portrait){
+    /* some CSS here */
+    .header, .skill-head{
+        font-size: 70pt;
+    }
+
+    .skill-head {
+        margin-top: 2vh;
+    }
+
+    .skills-box {
+        margin: auto !important;
+    }
+
+    .hobby-item, .summary-content, .skill-name {
+        font-size: 40pt;
+    }
+
+    .hobbies {
+        margin-top: 2vh !important;
+    }
+
+    .logo {
+        position: absolute;
+        width: 100% !important;
+        height: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        -webkit-transform: translate(-50%, -50%);
+    }
+    #Logo {
+        position: absolute; 
+        height: 100%; 
+        width: 100%; 
+        left: 0; 
+        top: 0;
+    }
 }
