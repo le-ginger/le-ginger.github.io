@@ -50,7 +50,7 @@ body {
     /* overflow: hidden; */
     height: 100%;
     bottom: -1px;
-    background-image: linear-gradient(to top, #402c6e 20%, #1a2229 80%);
+    background-image: linear-gradient(to top, #2c0880 20%, #1a2229 80%);
 }
 .bgTop {
     z-index: -5;
@@ -97,23 +97,6 @@ body {
 .navbar {
     height: 4em;
 }
-
-/* .nav-hover {
-    padding: 0.1em;
-    background-color: #F8F9FA;
-    transition: 0.1s linear;
-    width: 8vh;
-    text-align: center;
-    color: #7C7C7D;
-}
-
-.nav-hover:hover {
-    padding: 0.1em;
-    transition: 0.1s linear;
-    background-color: #402c6e;
-    border-radius: 5px;
-    color: white;
-} */
 
 .nav-item {
     text-align: center;
@@ -168,8 +151,12 @@ body {
     font-size: larger;
 }
 
+.hobby-content, .skills-box {
+    margin-top: 5vh;
+}
+
 .hobby-content ul {
-    margin-top: 1em;
+    /* margin-top: 1em; */
     list-style-type: disc;
 }
 
@@ -184,7 +171,7 @@ body {
 }
 
 .hobbies {
-    margin-top: 10vh;
+    margin-top: 2vh;
 }
 
 .divider {
@@ -200,7 +187,7 @@ body {
     margin-top: 6vh;
 }
 
-.fa-gamepad, .fa-tv {
+.fa-gamepad, .fa-tv, .fa-music, .fa-beer {
     font-size: 80pt;
     display: block;
     margin: auto;
@@ -214,12 +201,6 @@ body {
     padding-top: 5%;
     padding-bottom: 5%;
 }
-
-/* .fa-gamepad, .fa-tv, .billiards {
-    color: rgb(59,19,56) !important;
-    color: linear-gradient(56deg, rgba(59,19,56,1) 0%, rgba(44,11,86,1) 19%, rgba(35,6,103,1) 100%) !important;
-    fill: linear-gradient(56deg, rgba(59,19,56,1) 0%, rgba(44,11,86,1) 19%, rgba(35,6,103,1) 100%) !important;
-} */
 
 .skills-box {
     margin-left: 10em;
@@ -260,7 +241,8 @@ body {
 }
 
 .social {
-    margin-top: 20vh;
+    margin-top: 170vh;
+    padding-bottom: 20vh;
 }
 
 .icon {
@@ -310,3 +292,83 @@ body {
         top: 0;
     }
 }
+
+.row-header {
+    font-size: xxx-large;
+    font-weight: 500;
+    display: block;
+    margin-left: 25vh;
+    /* text-align: center; */
+}
+
+.time-line {
+    width: 0.2%;
+    background: rgb(204, 204, 204);
+    height: 70vh;
+    float: right;
+}
+
+.time-header {
+    font-size: x-large;
+}
+
+.time-content {
+    font-size: larger;
+}
+
+.time-1 {
+    margin-top: 8vh;
+    margin-left: 2vh;
+}
+
+.time-2 {
+    margin-top: 30vh;
+    float: right;
+    margin-right: 3vh;
+}
+
+.time-3 {
+    margin-left: 2vh;
+    margin-top: 40vh;
+}
+
+.time-row {
+    margin-top: 39vh;
+    color: white;
+    background-color: #2c0880;
+    position: absolute;
+    width: 120%;
+    left: 0;
+}
+
+.time-wave, .time-bottom {
+    /* z-index: 99; */
+    position: absolute;
+    left: 0;
+}
+
+.time-bottom {
+    margin-top: 75vh;
+}
+
+.hobby-c p {
+    margin: auto;
+    text-align: center;
+    width: 80%;
+}
+
+.hobby-card {
+    padding: 1vh;
+    transition: 0.2s linear;
+}
+
+.hobby-card:hover {
+    background-color: #2c0880;
+    color: white;
+    transition: 0.2s linear;
+}
+
+/* .contact-info {
+    text-align: center;
+    width: 20vh;
+} */

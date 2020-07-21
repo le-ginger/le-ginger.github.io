@@ -1,8 +1,8 @@
 console.log('connected');
-AOS.init({duration: 1200});
+AOS.init({duration: 1500});
 
 const languages = [ 'Javascript', 'HTML & CSS', 'Java', 'C++', 'C#', 'PHP', 'ASP.NET', 'NodeJS' ];
-const langSkill = [ 86, 80, 67, 67, 80, 69, 85, 80 ];
+const langSkill = [ 86, 80, 67, 60, 75, 69, 79, 80 ];
 let skill_flag = false;
 
 $(document).ready(() => {
