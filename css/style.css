@@ -290,6 +290,9 @@ body {
         width: 100%; 
         left: 0; 
         top: 0;
+    }   
+    .contact-text {
+        font-size: xx-large;
     }
 }
 
@@ -362,13 +365,29 @@ body {
     transition: 0.2s linear;
 }
 
-.hobby-card:hover {
+/* .hobby-card:hover {
     background-color: #2c0880;
     color: white;
     transition: 0.2s linear;
-}
-
-/* .contact-info {
-    text-align: center;
-    width: 20vh;
 } */
+
+@media only screen and (max-width: 990px){
+    .time-wave {
+        width: 110%;
+    }
+    .time-row {
+        margin-top: 19vh !important;
+    }
+    .time-2 {
+        margin-top: 18em;
+    }
+    .social {
+        margin-top: 120vh;
+    }
+    .contact-info {
+        width: 50%;
+        /* margin-left: 45%; */
+        margin: auto;
+        text-align: center;
+    }
+}
