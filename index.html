@@ -17,7 +17,88 @@
 
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg navbar-light bg-light" data-aos="fade-top">
+	<div id="wrapper">
+		<div class="wrapper-holder">
+			<header id="header">
+				<a class="menu_trigger" href="#">menu</a>
+					<nav id="nav">
+						<ul>
+							<li><a class="active" href="index.html">Home</a></li>
+							<li><a href="myskills.html">My skills</a></li>
+							<!-- <li><a href="Portfolio.html">Portfolio</a></li> -->
+							<li><a href="Contact.html">Contact</a></li>
+						</ul>
+					</nav>
+				<h1 class="logo">Aiden Diederiks</h1>
+				<h2 class="slogan">Student Web Developer</h2>
+			</header>
+		</div>
+		<div class="wrapper-holder grey">
+			<section id="main">
+				<h2>Here is my study history</h2>
+				<div class="box_timeline_holder">
+					<div class="box_timeline">
+						<ul>
+							<li>
+								<div class="date">
+									<span>2005</span>
+								</div>
+								<h3>Randhart Primary School</h3>
+								<p>I started my studies here</p>
+							</li>
+							<li>
+								<div class="date">
+									<span>2012</span>
+								</div>
+								<h3>Marais Viljoen High School</h3>
+								<p>I enrolled at this high school because it is close and the best option for where I lived</p>
+							</li>
+							<li>
+								<div class="date">
+									<span>2016</span>
+								</div>
+								<h3>I graduate from high school</h3>
+								<p>I graduated from high school with my eyes set on university</p>
+							</li>
+							<li>
+								<div class="date">
+									<span>2017</span>
+								</div>
+								<h3>University of Pretoria</h3>
+								<p>I started my tertiary studies with Computer Science</p>
+							</li>
+							<li>
+								<div class="date">
+									<span>2018</span>
+								</div>
+								<h3>University of Pretoria</h3>
+								<p>I changed my degree to Information and Knowledge Systems since it is very similar to CompSci but focuses more on UI and UX</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</div>
+		<footer id="footer">
+			<div class="footer-content">
+				<ul class="social">
+					<li class="email"><a href="./contact.html">Email</a></li>
+					<li class="github"><a href="https://github.com/le-ginger">GitHub</a></li>
+					<li class="linkedin"><a href="https://www.linkedin.com/in/aiden-diederiks-3045801a5/">LinkedIn</a></li>
+				</ul>
+			</div>
+		</footer>	
+	</div>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="js/isotope.pkgd.min.js"></script>
+	<script src="js/cells-by-row.js"></script>
+	<script type="text/javascript" src="js/fancybox/jquery.fancybox.pack.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+
+
+
+	<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light" data-aos="fade-top">
 		<div class="collapse navbar-collapse" id="navbarText">
 		  	<ul class="navbar-nav mr-auto">
 				<li class="nav-item active mr-3">
@@ -29,22 +110,92 @@
 		  	</ul>
 		</div>
 	</nav>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4 col-12 landing-content">
+				<div class="personal-portrait" data-aos="fade-right">
+					<img class="w-100 rounded float-left" src="./images/placeholder.png" alt="Me">
+				</div>
+			</div>
 
-	<div class="cover"></div>
-	<object class="logo" data="./images/Logo_svg_v2.svg" type="image/svg+xml"></object>
-	<div id="background-waves">
-		<div class="waveWrapper waveAnimation">
-			<div class="waveWrapperInner bgTop">
-				<div class="wave waveTop" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png')"></div>
+			<div class="col-lg-4 col-12 landing-content">
+				<div class="cover">
+					<object class="logo" data="./images/Logo_svg_v2.svg" type="image/svg+xml"></object>
+				</div>
 			</div>
-			<div class="waveWrapperInner bgMiddle">
-				<div class="wave waveMiddle" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png')"></div>
-			</div>
-			<div class="waveWrapperInner bgBottom">
-				<div class="wave waveBottom" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')"></div>
+
+			<div class="col-lg-4 col-12 landing-content">
+				<div class="summary" data-aos="fade-left">
+					<span class="header">Aiden Diederiks</span><br/>
+					<span class="divider mt-2"></span>
+					<p class="mt-4 summary-content">
+						I'm a third year university student at the University of Pretoria. I am currently studying information and knowledge systems.
+					</p>
+				</div>
 			</div>
 		</div>
-	</div>
+
+		<div class="hobbies">
+			<div class="row">
+				<div class="col-lg-6 col-12" data-aos="fade-right">
+					<div class="hobby-content">
+						<span class="hobby-head header">Hobbies</span>
+						<div class="divider"></div>
+
+						<div class="row">
+							<div class="col-lg-6 col-12 hobby-card">
+								<div class="row">
+									<i class="fa fa-gamepad" aria-hidden="true"></i>
+								</div>
+								<div class="row hobby-c">
+									<p class="hobby-text">Playing games</p>
+								</div>
+							</div>
+
+							<div class="col-lg-6 col-12 hobby-card">
+								<div class="row">
+									<i class="fa fa-music" aria-hidden="true"></i>
+								</div>
+								<div class="row hobby-c">
+									<p class="hobby-text">Listening to music</p>
+								</div>
+								
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-lg-6 col-12 hobby-card">
+								<div class="row hobby-c">
+									<i class="fa fa-tv" aria-hidden="true"></i>
+								</div>
+								<div class="row hobby-c">
+									<p class="hobby-text">Watching movies and series</p>
+								</div>
+								
+							</div>
+
+							<div class="col-lg-6 col-12 hobby-card">
+								<div class="row hobby-c">
+									<i class="fa fa-beer" aria-hidden="true"></i>
+								</div>
+								<div class="row hobby-c">
+									<p class="hobby-text">Playing pool, ping pong and darts</p>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-12" data-aos="fade-left">
+					<div class="skills-box">
+						<span class="skill-head header">Skills</span >
+							<div class="divider"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> -->
+	<!-- 
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-5 col-12 mt-5" data-aos="fade-right">
@@ -74,7 +225,7 @@
 									<i class="fa fa-gamepad" aria-hidden="true"></i>
 								</div>
 								<div class="row hobby-c">
-									<p>Playing games</p>
+									<p class="hobby-text">Playing games</p>
 								</div>
 							</div>
 
@@ -83,7 +234,7 @@
 									<i class="fa fa-music" aria-hidden="true"></i>
 								</div>
 								<div class="row hobby-c">
-									<p>Listening to music</p>
+									<p class="hobby-text">Listening to music</p>
 								</div>
 								
 							</div>
@@ -95,7 +246,7 @@
 									<i class="fa fa-tv" aria-hidden="true"></i>
 								</div>
 								<div class="row hobby-c">
-									<p>Watching movies and series</p>
+									<p class="hobby-text">Watching movies and series</p>
 								</div>
 								
 							</div>
@@ -105,17 +256,11 @@
 									<i class="fa fa-beer" aria-hidden="true"></i>
 								</div>
 								<div class="row hobby-c">
-									<p>Playing pool, ping pong and darts</p>
+									<p class="hobby-text">Playing pool, ping pong and darts</p>
 								</div>
 								
 							</div>
 						</div>
-						<!-- <ul>
-							<li class="hobby-item">Gaming</li>
-							<li class="hobby-item">Listening to music</li>
-							<li class="hobby-item">Watching Anime and Series</li>
-							<li class="hobby-item">Playing pool, ping pong and darts</li>
-						</ul> -->
 					</div>
 				</div>
 				<div class="col-lg-5 col-12" data-aos="fade-left">
@@ -159,13 +304,13 @@
 		
 
 		<div class="row social">
-			<div class="col-lg-3 icon">
+			<div class="col-lg-3 icon icon-top">
 				<a href="https://www.linkedin.com/in/aiden-diederiks-3045801a5/">
 					<i class="fa fa-linkedin"></i>
 				</a>
 			</div>
 
-			<div class="col-lg-3 icon">
+			<div class="col-lg-3 icon icon-bottom">
 				<a href="https://github.com/le-ginger">
 					<i class="fa fa-github"></i>
 				</a>
@@ -187,7 +332,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 	<script src="./js/script.js"></script>
 </body>
