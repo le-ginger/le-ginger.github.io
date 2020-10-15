@@ -271,7 +271,7 @@ h2.slogan{
 }
 .box_timeline h3{
 	font-family: 'novecento_sans_widemedium';
-	color: linear-gradient(56deg, rgba(108,0,100,1) 0%, rgba(42,1,139,1) 100%);
+	color: #fff;
 	font-size: 14px;
 	line-height: 16px;
 	display: block;
