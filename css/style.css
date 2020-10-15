@@ -134,10 +134,17 @@ a:hover{text-decoration:underline;}
 }
 .wrapper-holder {
 	width:100%;
-    display:table-row;
+	min-height: 15em;
     background: linear-gradient(56deg, rgba(108,0,100,1) 0%, rgba(42,1,139,1) 100%);
 }
-.wrapper-holder.grey{background: #28292b;}
+.wrapper-holder.grey {
+	background: #28292b; 
+	width: 80%; 
+	display: inline-block; 
+	margin-left: 10%;
+	margin-top: -3.5%;
+	border-radius: 5px;
+}
 #header {
 	max-width: 1170px;
 	margin: 0 auto;
@@ -216,7 +223,7 @@ h2.slogan{
 	margin: 0 auto;
 	padding: 93px 0 76px;
 	position:relative;
-	background: url(../images/icon_header.png) no-repeat 50% 0;
+	/* background: url(../images/icon_header.png) no-repeat 50% 0; */
 }
 #main h2{
 	display: block;
@@ -362,14 +369,14 @@ h2.slogan{
 	height: 100%;
 	position: relative;
 }
-.plagin_list li.li_1 a{background: url(../images/icon_html.png) no-repeat 50% 50% ;}
-.plagin_list li.li_2 a{background: url(../images/icon_js.png) no-repeat 50% 50% ;}
-.plagin_list li.li_3 a{background: url(../images/icon_angular.png) no-repeat 50% 50% ;}
-.plagin_list li.li_4 a{background: url(../images/icon_java.png) no-repeat 50% 50% ;}
-.plagin_list li.li_5 a{background: url(../images/icon_cpp.png) no-repeat 50% 50% ;}
-.plagin_list li.li_6 a{background: url(../images/icon_csharp.png) no-repeat 50% 50% ;}
-.plagin_list li.li_7 a{background: url(../images/icon_php.png) no-repeat 50% 50% ;}
-.plagin_list li.li_8 a{background: url(../images/icon_nodejs.png) no-repeat 50% 50% ;}
+.plagin_list li.li_1 a{background: url(../images/icon_html.png) no-repeat 50% 50% ; pointer-events: none;}
+.plagin_list li.li_2 a{background: url(../images/icon_js.png) no-repeat 50% 50% ;  pointer-events: none;}
+.plagin_list li.li_3 a{background: url(../images/icon_angular.png) no-repeat 50% 50% ; pointer-events: none;}
+.plagin_list li.li_4 a{background: url(../images/icon_java.png) no-repeat 50% 50% ; pointer-events: none;}
+.plagin_list li.li_5 a{background: url(../images/icon_cpp.png) no-repeat 50% 50% ; pointer-events: none;}
+.plagin_list li.li_6 a{background: url(../images/icon_csharp.png) no-repeat 50% 50% ; pointer-events: none;}
+.plagin_list li.li_7 a{background: url(../images/icon_php.png) no-repeat 50% 50% ; pointer-events: none;}
+.plagin_list li.li_8 a{background: url(../images/icon_nodejs.png) no-repeat 50% 50% ; pointer-events: none;}
 .wrapper-holder.grey p{padding: 0 0 25px;}
 .plagin_list.none{display: none;}
 
@@ -628,7 +635,7 @@ transition: all 0.5s ease-in-out;
 
 @media (-webkit-min-device-pixel-ratio:2) ,(min--moz-device-pixel-ratio:2),(-o-min-device-pixel-ratio:2/1),(min-device-pixel-ratio:2),(min-resolution:192dpi),(min-resolution:2dppx){
 	#main {
-		background-image: url(../images/icon_header@x2.png);
+		/* background-image: url(../images/icon_header@x2.png); */
 		background-size:114px 46px;
 	}
 	.menu_trigger{
