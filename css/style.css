@@ -152,8 +152,8 @@ a:hover{text-decoration:underline;}
 	position:relative;
 }
 .menu_trigger{
-	width: 31px;
-	height: 31px;
+	width: 45px;
+	height: 45px;
 	right:0;
 	background: url(../images/btn_mobile_menu.png) no-repeat;
 	text-indent: -9999em;
@@ -849,7 +849,7 @@ transition: all 0.5s ease-in-out;
 	.footer-content .social li.linkedin a{	background-size: 20px auto;	}
 	.footer-content .social{width: 269px;}
 	.logo {font-size: 56px;line-height: 68px;}
-	#wrapper.inner .menu_trigger,#wrapper.portfolio .menu_trigger{top: 6px;}
+	#wrapper.inner .menu_trigger,#wrapper.portfolio .menu_trigger{top: 10px;}
 }
 @media only screen and (max-width : 680px) {
 	#container.item-list{width: 300px;}
