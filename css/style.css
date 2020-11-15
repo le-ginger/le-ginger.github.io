@@ -531,7 +531,15 @@ transition: all 0.5s ease-in-out;
 }
 .box_contact span.email{background: url(../images/icon_email2.png) no-repeat;}
 .box_contact span.phone{background: url(../images/icon_phone.png) no-repeat;}
-.box_contact span.skype{background: url(../images/icon_skype.png) no-repeat;}
+#main > div.box_contact > button {
+	width: 10em;
+	height: 3.5em;
+	font-size: 20px;
+	background: linear-gradient(56deg, rgba(108,0,100,1) 0%, rgba(42,1,139,1) 100%);
+	color: white;
+	border: none;
+	border-radius: 4px;
+}
 /*footer
  */
 #footer {
@@ -563,7 +571,7 @@ transition: all 0.5s ease-in-out;
 	position:relative;
 	display: table;
 }
-.footer-content .social li:first-child{margin-left: 7.5em;}
+.footer-content .social li:first-child{margin-left: 5em;}
 .footer-content .social li:hover{
 	background: linear-gradient(56deg, rgba(108,0,100,1) 0%, rgba(42,1,139,1) 100%);
 	-webkit-transition: all 0.5s ease-in-out;
@@ -576,10 +584,9 @@ transition: all 0.5s ease-in-out;
 	position: relative;
 }
 .footer-content .social li.email a{background: url(../images/icon_email.png) no-repeat 50% 50% ;}
-.footer-content .social li.facebook a{background: url(../images/icon_fb.png) no-repeat 50% 50%;}
 .footer-content .social li.github a{background: url(../images/icon_github.png) no-repeat 50% 50% ;}
-.footer-content .social li.twitter a{background: url(../images/icon_tw.png) no-repeat 50% 50% ;}
 .footer-content .social li.linkedin a{background: url(../images/icon_ln.png) no-repeat 50% 50%;}
+.footer-content .social li.cv a{background: url(../images/icon_cv.png) no-repeat 50% 50%;}
 .footer-content p{
 	font:18px/20px Arial, Helvetica, sans-serif;
 	display: block;
@@ -726,9 +733,9 @@ transition: all 0.5s ease-in-out;
 		background-image: url(../images/icon_phone@x2.png);
 		background-size:54px 54px;
 	}
-	.box_contact span.skype{
-		background-image: url(../images/icon_skype@x2.png);
-		background-size:54px 51px;
+	#main > div.box_contact > button{
+		width: 10em;
+		height: 3em;
 	}
 	.fancybox-close {
 		background-image: url(../images/ico_btn-close@x2.png);
@@ -847,6 +854,7 @@ transition: all 0.5s ease-in-out;
 	.footer-content .social li.email a{	background-size: 20px auto;	}
 	.footer-content .social li.github a{	background-size: 20px auto;	}
 	.footer-content .social li.linkedin a{	background-size: 20px auto;	}
+	.footer-content .social li.cv a{	background-size: 20px auto;	}
 	.footer-content .social{width: 269px;}
 	.logo {font-size: 56px;line-height: 68px;}
 	#wrapper.inner .menu_trigger,#wrapper.portfolio .menu_trigger{top: 10px;}
